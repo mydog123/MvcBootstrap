@@ -1,0 +1,71 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+
+<script type="text/javascript">
+    window.appInsights={queue:[],applicationInsightsId:null,accountId:null,appUserId:null,configUrl:null,start:function(n){function u(n,t){n[t]=function(){var i=arguments;n.queue.push(function(){n[t].apply(n,i)})}}function f(n){var t=document.createElement("script");return t.type="text/javascript",t.src=n,t.async=!0,t}function r(){i.appendChild(f("//az416426.vo.msecnd.net/scripts/ai.0.js"))}var i,t;this.applicationInsightsId=n;u(this,"logEvent");u(this,"logPageView");i=document.getElementsByTagName("script")[0].parentNode;this.configUrl===null?r():(t=f(this.configUrl),t.onload=r,t.onerror=r,i.appendChild(t));this.start=function(){}}};
+    appInsights.configUrl="/ApplicationInsights.axd";
+    appInsights.start();
+    appInsights.logPageView();
+</script></head>
+<body>
+    <div class="container">
+        <div class="collapse navbar-collapse" id="myNavbar">
+
+            <ul class="nav navbar-nav navbar-right">
+              <li>
+                    @Html.ActionLink("Đăng ký", "Dangky", null, htmlAttributes: new { @class = "Dangky" })
+                    <a href="Home/Dangky" class="Dangky"></a>
+                </li>
+                <li>
+                    @Html.ActionLink("Đăng nhập", "Dangnhap", null, htmlAttributes: new { @class = "Dangky" })
+                    <a href="Home/Dangnhap" class="Dangnhap"></a>
+                </li>
+                <li>
+                    @Html.ActionLink("Hướng dẫn", "Huongdan", null, htmlAttributes: new { @class = "Dangky" })
+                    <a href="#pricing"></a>
+                </li>
+                <li>
+                    @Html.ActionLink("Liên hệ", "Lienhe", null, htmlAttributes: new { @class = "Dangky" })
+                    <a href="#pricing"></a>
+             
+                </li>
+            </ul>
+               
+        </div>
+      <div>
+
+      </div>
+         <div class="masthead">
+             <ul class="nav nav-tabs">
+                 <li class="active"><a href="#">Trang chủ</a></li>
+                 <li><a href="#">Tìm mua ô tô</a></li>
+                 <li><a href="#">Salon Ôtô</a></li>
+                 <li><a href="#">Bán ôto</a></li>
+                 <li><a href="#">Cần mua</a></li>
+              </ul>
+
+            <h3 class="text-muted">@Html.ActionLink("Application Name", "Index", "Home")</h3>
+           
+            </div>
+
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+            </footer>
+        </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    
+    @RenderSection("scripts", required: false)
+
+</body>
+</html>
