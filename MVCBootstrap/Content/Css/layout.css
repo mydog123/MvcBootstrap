@@ -1,0 +1,62 @@
+#div-parent{
+	width:990px;
+	margin-left:auto;
+	margin-right:auto;	
+	position:relative;	
+}
+
+#div-header{
+    float:left;
+    margin-bottom:10px;
+}
+
+#div-menu{
+    margin-top:10px
+}
+
+#div-content{
+    margin-top:10px
+}
+
+#div-left{
+    float:left;
+    background-color:gold;
+    border-radius:5px;
+}
+
+#div-center{
+    float:left;
+    border-radius:5px;
+    background-color:gainsboro
+}
+
+#div-right{
+    float:right;
+    border-radius:5px;
+    background-color:chartreuse
+}
+
+#div-carlist{
+    margin-left:0px;
+}
+
+#category-id{
+    margin-left:-24px;
+}
+
+#category-id ul{
+    display:none
+}
+
+#div-footer{
+    margin-top:20px;
+	clear:both;
+	width:990px;	
+	height:130px;
+	background:#F4FAFC;
+	margin-bottom:10px;       
+}
+
+#div-footer p{
+    text-align:center;
+}
