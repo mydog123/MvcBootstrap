@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Oto Viet</title>
     @Styles.Render("~/bundles/css")
+    
     @Scripts.Render("~/bundles/modernizr")
 
+    @Scripts.Render("~/bundles/jquery")
+
+    @Scripts.Render("~/bundles/js")
+
     @RenderSection("Styles", required: false)
+
 </head>
 
 <body>    
@@ -19,10 +25,10 @@
             @{ Html.RenderPartial("~/Views/Shared/Menu.cshtml"); }
         </div>
         <div id="div-content" class="row">
-            <div id="div-left" class="col-sm-3">
+            <div id="div-left" class="col-sm-2">
                 @{ Html.RenderPartial("~/Views/Shared/CarList.cshtml"); }
             </div>
-            <div id="div-center" class="col-sm-6">
+            <div id="div-center" style="width:auto">
                 @RenderBody()
             </div>
             <div id="div-right" class="col-sm-3">
@@ -33,9 +39,8 @@
             <p>Oto2018 Corp.</p>
         </div>
     </div>
+    
 
-    @Scripts.Render("~/bundles/jquery")
-    @Scripts.Render("~/bundles/js")
 
     @RenderSection("Scripts", required: false)
 

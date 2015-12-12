@@ -22,10 +22,12 @@ namespace MVCBootstrap
 
             bundles.Add(new ScriptBundle("~/bundles/js").Include(
                       "~/Content/Scripts/bootstrap.js",
+                      "~/Content/Scripts/bootstrap-dropdownhover.js",
                       "~/Content/Scripts/respond.js"));
 
             bundles.Add(new StyleBundle("~/bundles/css").Include(
                       "~/Content/Css/bootstrap.css",
+                      "~/Content/Css/bootstrap-dropdownhover.min.css",                      
                       "~/Content/Css/site.css",
                       "~/Content/Css/justified-nav.css",
                       "~/Content/Css/layout.css"

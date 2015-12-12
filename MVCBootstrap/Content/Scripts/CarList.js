@@ -1,8 +1,8 @@
 ﻿$(".category").hover(
-    function () {
-        $(this).find("ul").show();
+    function () {        
+        $(this).find("ul").toggle();
     }, 
-    function () {
-        $(this).find("ul").hide();
+    function () {        
+        $(this).find("ul").toggle();
     }
 );

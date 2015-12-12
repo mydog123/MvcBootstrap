@@ -176,17 +176,21 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\assets\icon-fonts\styles.css" />
+    <Content Include="Content\Css\bootstrap-dropdownhover.min.css" />
     <Content Include="Content\Css\bootstrap.css" />
     <Content Include="Content\Css\animate.min.css" />
     <Content Include="Content\Css\bootstrap.min.css" />
     <Content Include="Content\Css\jquery.vegas.min.css" />
     <Content Include="Content\Css\Justified-Nav.css" />
+    <Content Include="Content\Css\cars.css" />
     <Content Include="Content\Css\owl.carousel.css" />
     <Content Include="Content\Css\owl.theme.css" />
     <Content Include="Content\Css\pixeden-icons.css" />
     <Content Include="Content\Css\responsive.css" />
     <Content Include="Content\Css\layout.css" />
     <Content Include="Content\Css\styles.css" />
+    <Content Include="Content\Scripts\bootstrap-dropdownhover.js" />
+    <Content Include="Content\Scripts\Menu.js" />
     <Content Include="Content\Scripts\CarList.js" />
     <Content Include="favicon.ico" />
     <Content Include="Content\assets\fonts\glyphicons-halflings-regular.svg" />
@@ -254,6 +258,7 @@
     <Content Include="Views\Shared\CarList.cshtml" />
     <Content Include="Views\Shared\Adverstise.cshtml" />
     <Content Include="Views\Shared\Menu.cshtml" />
+    <Content Include="Views\Shared\CarList - Copy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
