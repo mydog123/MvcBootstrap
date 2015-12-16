@@ -1,21 +1,53 @@
+
+#div-login{
+    float: right;
+    background: transparent url(../Images/bar.gif) repeat-x scroll 0px -39px;
+    height: 50px;
+    margin-top: -1px;
+}
+
+#div-login ul{
+        float: left;
+    margin-top: 3px;
+    padding-left: 0px;
+    margin-left: 5px;
+}
+
+#div-login li{
+        float: left;
+    display: block;
+    border-right: 1px solid #CECECE;
+    padding-left: 15px;
+    padding-right: 10px;
+    text-indent: 0px;
+    margin-top: 0px;
+}
+
 #div-parent{
 	width:990px;
 	margin-left:auto;
 	margin-right:auto;	
-	position:relative;	
+	position:relative;	    
 }
 
 #div-header{
     float:left;
+    width:100%;
     margin-bottom:10px;
 }
 
+#div-support{
+   float:right;
+}
+
 #div-menu{
+    float:left;
     margin-top:10px;
+    margin-bottom:10px;
     background-color:gainsboro; 
     border-radius:5px;
-    border: 1px solid #73AD21;    
-
+    border: 1px solid #2A6776;    
+    width:100%
 }
 
 #div-content{
@@ -26,22 +58,27 @@
     float:left;
     background-color:gainsboro; 
     border-radius:5px;
-    border: 2px solid gold;    
-    margin-right:7px;
+    border: 1px solid gold; 
+    height:1025px;       
 }
 
 #div-center{
     float:left;
     border-radius:5px;           
-    border: 2px solid gold;    
-    padding: 10px;     
+    border: 1px solid gold;    
+    padding: 10px;         
 }
 
-#div-right{
-    float:right;
+#div-right{   
+    float:right; 
+    height:1025px;
+}
+
+#div-showroom{    
     border-radius:5px;
-    background-color:chartreuse;
+    background-color:#2A6776;
     border: 2px solid gold;
+    color:white;
 }
 
 #div-carlist{
@@ -67,4 +104,8 @@
 
 #div-footer p{
     text-align:center;
+}
+
+body div{
+    font-size:12px;
 }

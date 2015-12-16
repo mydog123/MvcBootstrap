@@ -180,6 +180,8 @@
     <Content Include="Content\Css\bootstrap.css" />
     <Content Include="Content\Css\animate.min.css" />
     <Content Include="Content\Css\bootstrap.min.css" />
+    <Content Include="Content\Css\common.css" />
+    <Content Include="Content\Css\div-car-list.css" />
     <Content Include="Content\Css\jquery.vegas.min.css" />
     <Content Include="Content\Css\Justified-Nav.css" />
     <Content Include="Content\Css\cars.css" />
@@ -189,9 +191,11 @@
     <Content Include="Content\Css\responsive.css" />
     <Content Include="Content\Css\layout.css" />
     <Content Include="Content\Css\styles.css" />
+    <Content Include="Content\Images\bar.gif" />
+    <Content Include="Content\Images\icons.gif" />
     <Content Include="Content\Scripts\bootstrap-dropdownhover.js" />
     <Content Include="Content\Scripts\Menu.js" />
-    <Content Include="Content\Scripts\CarList.js" />
+    <Content Include="Content\Scripts\common.js" />
     <Content Include="favicon.ico" />
     <Content Include="Content\assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -256,9 +260,12 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\AnimationDemo.cshtml" />
     <Content Include="Views\Shared\CarList.cshtml" />
-    <Content Include="Views\Shared\Adverstise.cshtml" />
+    <Content Include="Views\Shared\ShowRoom.cshtml" />
     <Content Include="Views\Shared\Menu.cshtml" />
     <Content Include="Views\Shared\CarList - Copy.cshtml" />
+    <Content Include="Views\Shared\Model.cshtml" />
+    <Content Include="Views\Shared\Search.cshtml" />
+    <Content Include="Views\Shared\AdvertiseRight.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -284,7 +291,7 @@
     <VisualStudio>
       <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
         <WebProjectProperties>
-          <UseIIS>True</UseIIS>
+          <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
           <DevelopmentServerPort>55832</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>

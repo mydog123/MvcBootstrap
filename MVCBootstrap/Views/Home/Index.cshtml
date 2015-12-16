@@ -3,99 +3,142 @@
 }
 
 @section Styles{
-
+<link href="~/Content/Css/div-car-list.css" rel="stylesheet" />
 }
 
-<div id="div-car-list">    
-    <div class="gray-box" id="h-list-car">    
-        <div class="g-box-content" style="height:2690px">
-            <div class="g-b-header">
-                <h3>Tin đăng bán xe</h3>
-                <span class="total_car">Tổng số : <b>21,287 tin bán xe</b></span>
-            </div>
-            <!-- begin list car -->
-            <div class="car-item row1">
-                <div class="cb1">
-                    Xe cũ<br>
-                    <b>2003</b>
+<div id="div-car-list" class="car-list-box">
 
-                </div>
-                <div class="cb2">
-                    <a href="http://www.bonbanh.com/Xe-Mercedes_Benz-E_class-E240-Elegance-2003-374150.html" title="ban oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003">
-                        <b>
-                            Mercedes Benz E class E240 Elegance
-                            - 2003
-                        </b>
-                    </a>
-                </div>
-                <div class="cb3">
-                    <b>399 Triệu <span style='color:#aaa;font-size:11px'><br>~ 17,965 USD</span></b>
-                </div>
-                <div class="cb4">
-                    <b>Hà Nội</b>
-                </div>
-                <div class="cb5">
-                    <a href="http://www.bonbanh.com/Xe-Mercedes_Benz-E_class-E240-Elegance-2003-374150.html" title="oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003"><img title="oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003" alt="oto 374150" src="" class="h-car-img"></a>
-                    <br><span class='car_code'>Mã: 374150</span>
-                </div>
-                <div class="cb6">
-                    *Xe lắp ráp trong nước, màu đen,máy xăng, số tự động ... <br>
-                    <div style="margin-top:5px;">
-                        Cần bán xe Mercedes E240Elegance
-                        Xe chính chủ, chất luợng tốt, sang trọng, đẳng ...
-                    </div>
-                </div>
-                <div class="cb7">
-                    Liên hệ:
-                    <b>Nguyễn Quang Phúc</b><br>
-                    116 Hang Bong Hoan Kiem  <br><br>ĐT:0904882665
-                </div>
+    @{ Html.RenderPartial("~/Views/Shared/Model.cshtml"); }
 
+    <div class="car-list-header">
+        <h3>Tin đăng bán xe</h3>
+        <span class="car-total">Tổng số : <b>21,287 tin bán xe</b></span>
+    </div>
+    <!-- begin list car -->
+    
+    <div class="car-item row1">
+        <div class="car-model">
+            Xe cũ<br>
+            <b>2003</b>
 
-            </div>
-            <div class="car-item row2">
-                <div class="cb1">
-                    Xe cũ<br>
-                    <b>2005</b>
-
-                </div>
-                <div class="cb2">
-                    <a href="http://www.bonbanh.com/Xe-Ford-Mondeo--2005-374221.html" title="ban oto lap rap trong nuoc Ford Mondeo  2005">
-                        <b>
-                            Ford Mondeo
-                            - 2005
-                        </b>
-                    </a>
-                </div>
-                <div class="cb3">
-                    <b>360 Triệu <span style='color:#aaa;font-size:11px'><br>~ 16,209 USD</span></b>
-                </div>
-                <div class="cb4">
-                    <b>Thanh Hóa</b>
-                </div>
-                <div class="cb5">
-                    <a href="http://www.bonbanh.com/Xe-Ford-Mondeo--2005-374221.html" title="oto lap rap trong nuoc Ford Mondeo  2005"><img title="oto lap rap trong nuoc Ford Mondeo  2005" alt="oto 374221" src="" class="h-car-img"></a>
-                    <br><span class='car_code'>Mã: 374221</span>
-                </div>
-                <div class="cb6">
-                    *Xe lắp ráp trong nước, màu đen,máy xăng, số tay ... <br>
-                    <div style="margin-top:5px;">
-                        MonDeo 2.5, đời 2005 Dòng xe cao cấp ghế da chỉnh điện 8 hướng,, đèn 2 vạch, Full ...
-                    </div>
-                </div>
-                <div class="cb7">
-                    Liên hệ:
-                    <b>Duong anh Tuan</b><br>
-                    bỉm sơn  <br><br>ĐT:0941788999
-                </div>
-
-
+        </div>
+        <div class="car-type">
+            <a href="http://www.bonbanh.com/Xe-Mercedes_Benz-E_class-E240-Elegance-2003-374150.html" title="ban oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003">
+                <b>
+                    Mercedes Benz E class E240 Elegance
+                    - 2003
+                </b>
+            </a>
+        </div>
+        <div class="car-price">
+            <b>399 Triệu (~ 17,965 USD)</b>
+        </div>
+        <div class="car-place">
+            <b>Hà Nội</b>
+        </div>
+        <div class="car-img-box">
+            <a href="http://www.bonbanh.com/Xe-Mercedes_Benz-E_class-E240-Elegance-2003-374150.html" title="oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003"><img title="oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003" alt="oto 374150" src="http://www.bonbanh.com/uploads/users/60238/car/362436/s_1449134885.jpg" class="car-img"></a>
+            <br><span class='car_code'>Mã: 374150</span>
+        </div>
+        <div class="car-from">
+            *Xe lắp ráp trong nước, màu đen,máy xăng, số tự động ... <br>
+            <div style="margin-top:5px;">
+                Cần bán xe Mercedes E240Elegance
+                Xe chính chủ, chất luợng tốt, sang trọng, đẳng ...
             </div>
         </div>
+        <div class="car-contact">
+            Liên hệ:
+            <b>Nguyễn Quang Phúc</b><br>
+            116 Hang Bong Hoan Kiem  <br><br>ĐT:0904882665
+        </div>
+
+
     </div>
+
+    <div class="car-item row2">
+        <div class="car-model">
+            Xe cũ<br>
+            <b>2003</b>
+
+        </div>
+        <div class="car-type">
+            <a href="http://www.bonbanh.com/Xe-Mercedes_Benz-E_class-E240-Elegance-2003-374150.html" title="ban oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003">
+                <b>
+                    Mercedes Benz E class E240 Elegance
+                    - 2003
+                </b>
+            </a>
+        </div>
+        <div class="car-price">
+            <b>399 Triệu (~ 17,965 USD)</b>
+        </div>
+        <div class="car-place">
+            <b>Hà Nội</b>
+        </div>
+        <div class="car-img-box">
+            <a href="http://www.bonbanh.com/Xe-Mercedes_Benz-E_class-E240-Elegance-2003-374150.html" title="oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003"><img title="oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003" alt="oto 374150" src="http://www.bonbanh.com/uploads/users/60238/car/362436/s_1449134885.jpg" class="car-img"></a>
+            <br><span class='car_code'>Mã: 374150</span>
+        </div>
+        <div class="car-from">
+            *Xe lắp ráp trong nước, màu đen,máy xăng, số tự động ... <br>
+            <div style="margin-top:5px;">
+                Cần bán xe Mercedes E240Elegance
+                Xe chính chủ, chất luợng tốt, sang trọng, đẳng ...
+            </div>
+        </div>
+        <div class="car-contact">
+            Liên hệ:
+            <b>Nguyễn Quang Phúc</b><br>
+            116 Hang Bong Hoan Kiem  <br><br>ĐT:0904882665
+        </div>
+
+
+    </div>
+    
+    <div class="car-item row1">
+        <div class="car-model">
+            Xe cũ<br>
+            <b>2003</b>
+
+        </div>
+        <div class="car-type">
+            <a href="http://www.bonbanh.com/Xe-Mercedes_Benz-E_class-E240-Elegance-2003-374150.html" title="ban oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003">
+                <b>
+                    Mercedes Benz E class E240 Elegance
+                    - 2003
+                </b>
+            </a>
+        </div>
+        <div class="car-price">
+            <b>399 Triệu (~ 17,965 USD)</b>
+        </div>
+        <div class="car-place">
+            <b>Hà Nội</b>
+        </div>
+        <div class="car-img-box">
+            <a href="http://www.bonbanh.com/Xe-Mercedes_Benz-E_class-E240-Elegance-2003-374150.html" title="oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003"><img title="oto lap rap trong nuoc Mercedes Benz E class E240 Elegance 2003" alt="oto 374150" src="http://www.bonbanh.com/uploads/users/60238/car/362436/s_1449134885.jpg" class="car-img"></a>
+            <br><span class='car_code'>Mã: 374150</span>
+        </div>
+        <div class="car-from">
+            *Xe lắp ráp trong nước, màu đen,máy xăng, số tự động ... <br>
+            <div style="margin-top:5px;">
+                Cần bán xe Mercedes E240Elegance
+                Xe chính chủ, chất luợng tốt, sang trọng, đẳng ...
+            </div>
+        </div>
+        <div class="car-contact">
+            Liên hệ:
+            <b>Nguyễn Quang Phúc</b><br>
+            116 Hang Bong Hoan Kiem  <br><br>ĐT:0904882665
+        </div>
+
+
+    </div>
+
 </div>
 
 @section Scripts
 {
-    
+
 }
