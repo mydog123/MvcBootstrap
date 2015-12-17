@@ -1,7 +1,7 @@
 
 #div-login{
     float: right;
-    background: transparent url(../Images/bar.gif) repeat-x scroll 0px -39px;
+    background: transparent url(../../Images/bar.gif) repeat-x scroll 0px -39px;
     height: 50px;
     margin-top: -1px;
 }
@@ -44,45 +44,42 @@
     float:left;
     margin-top:10px;
     margin-bottom:10px;
-    background-color:gainsboro; 
+    background-color:#374B64; 
     border-radius:5px;
     border: 1px solid #2A6776;    
     width:100%
 }
 
-#div-content{
-    margin-top:10px
-}
-
 #div-left{
     float:left;
-    background-color:gainsboro; 
-    border-radius:5px;
-    border: 1px solid gold; 
-    height:1025px;       
+    background-color:#374B64;     
+    border-top-left-radius:5px;            
+    border-bottom-left-radius:5px;
+    border: 1px solid #428bca;    
+    height:1000px;  
+    width:140px;     
 }
 
 #div-center{
-    float:left;
-    border-radius:5px;           
-    border: 1px solid gold;    
-    padding: 10px;         
+    float:left;           
+    border-top:1px solid #428bca; 
+    border-right:1px solid #428bca; 
+    border-bottom:1px solid #428bca; 
+    padding: 5px;         
+    width:620px;
+    height:1000px;  
 }
 
 #div-right{   
-    float:right; 
-    height:1025px;
-}
-
-#div-showroom{    
-    border-radius:5px;
-    background-color:#2A6776;
-    border: 2px solid gold;
-    color:white;
-}
-
-#div-carlist{
-    margin-left:-15px;
+    float:right;
+    border-top-right-radius:5px;            
+    border-bottom-right-radius:5px;   
+    border-top:1px solid #428bca; 
+    border-right:1px solid #428bca; 
+    border-bottom:1px solid #428bca;  
+    height:1000px;
+    width:230px;
+    padding:0px;
 }
 
 #category-id{
@@ -104,8 +101,4 @@
 
 #div-footer p{
     text-align:center;
-}
-
-body div{
-    font-size:12px;
 }

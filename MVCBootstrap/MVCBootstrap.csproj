@@ -165,6 +165,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\CarController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -175,21 +176,23 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Acura.xml" />
     <Content Include="Content\assets\icon-fonts\styles.css" />
     <Content Include="Content\Css\bootstrap-dropdownhover.min.css" />
     <Content Include="Content\Css\bootstrap.css" />
     <Content Include="Content\Css\animate.min.css" />
     <Content Include="Content\Css\bootstrap.min.css" />
-    <Content Include="Content\Css\common.css" />
-    <Content Include="Content\Css\div-car-list.css" />
+    <Content Include="Content\Css\base\common.css" />
+    <Content Include="Content\Css\base\div-advertise.css" />
+    <Content Include="Content\Css\base\div-car-menu.css" />
+    <Content Include="Content\Css\base\div-car-list.css" />
     <Content Include="Content\Css\jquery.vegas.min.css" />
     <Content Include="Content\Css\Justified-Nav.css" />
-    <Content Include="Content\Css\cars.css" />
     <Content Include="Content\Css\owl.carousel.css" />
     <Content Include="Content\Css\owl.theme.css" />
     <Content Include="Content\Css\pixeden-icons.css" />
     <Content Include="Content\Css\responsive.css" />
-    <Content Include="Content\Css\layout.css" />
+    <Content Include="Content\Css\base\layout.css" />
     <Content Include="Content\Css\styles.css" />
     <Content Include="Content\Images\bar.gif" />
     <Content Include="Content\Images\icons.gif" />
@@ -199,7 +202,7 @@
     <Content Include="favicon.ico" />
     <Content Include="Content\assets\fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
-    <Content Include="Content\Css\Site.css" />
+    <Content Include="Content\Css\base\Site.css" />
     <Content Include="Content\Images\loading.gif" />
     <Content Include="Content\Images\team\pic1.jpg" />
     <Content Include="Content\Images\team\pic2.jpg" />
@@ -266,10 +269,9 @@
     <Content Include="Views\Shared\Model.cshtml" />
     <Content Include="Views\Shared\Search.cshtml" />
     <Content Include="Views\Shared\AdvertiseRight.cshtml" />
+    <Content Include="Views\Car\CarFirm.cshtml" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="App_Data\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <Content Include="Content\assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\assets\fonts\glyphicons-halflings-regular.ttf" />

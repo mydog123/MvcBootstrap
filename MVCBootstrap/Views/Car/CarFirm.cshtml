@@ -5,15 +5,25 @@
 @section Styles{
 
 }
+@model List<string> 
 
 <div id="div-car-list" class="car-list-box">
-    
+
+    <div id="model">
+        @foreach (var carModel in Model.ToList().ToArray())
+        {            
+            <div>
+                <input type="checkbox" class="checkbox-inline " checked="checked" /> <label>@carModel</label>
+            </div>            
+        }
+    </div>
+
     <div class="car-list-header">
         <h3>Tin đăng bán xe</h3>
         <span class="car-total">Tổng số : <b>21,287 tin bán xe</b></span>
     </div>
     <!-- begin list car -->
-    
+
     <div class="car-item row1">
         <div class="car-model">
             Xe cũ<br>
@@ -51,7 +61,7 @@
             116 Hang Bong Hoan Kiem  <br>ĐT:0904882665
         </div>
 
-    </div>    
+    </div>
 
     <div class="car-item row2">
         <div class="car-model">

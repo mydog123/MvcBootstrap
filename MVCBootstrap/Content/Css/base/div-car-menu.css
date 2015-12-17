@@ -1,8 +1,17 @@
-#div-carlist span{
-    margin-left:20px;
-    color:red;
-    font-size:15px;
-    font-weight:bold;
+
+#div-car-menu{
+    margin-left:-15px;
+}
+
+.dropdown-toggle{
+    color:white;
+    text-decoration:none;
+}
+
+#div-car-menu span{
+    margin-left:10px;
+    color:#FFAA2A;
+    font-size:15px;    
 }
 
 .dropdown-menu li{
@@ -15,7 +24,7 @@
 }
 
 .dropdown{
-    width:200px;
+    width:140px;
 }
 
 .dropdown:hover .dropdown-toggle{
@@ -27,6 +36,6 @@
 
 .dropdown:hover .dropdown-menu {
     display: block;
-    left: 164px;    
+    left: 136px;    
     top: -3px;    
 }
